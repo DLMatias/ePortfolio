@@ -14,6 +14,21 @@
       line-height: 1.6;
     }
 
+    header {
+      background: linear-gradient(to right, #1e3d7b, #0a1f44);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 100px;
+      display: block;
+      margin: 10px auto;
+    }
+
     h1, h2, h3 {
       color: #8ab4f8;
       text-align: center;
@@ -52,6 +67,13 @@
       margin-left: 15px;
     }
 
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #1a3a70;
+      border-radius: 6px;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -62,15 +84,24 @@
 </head>
 <body>
 
-  <h1>Derek Matias</h1>
-  <h2>Southern New Hampshire University</h2>
-  <h3>CS-499 Computer Science Capstone ePortfolio</h3>
+  <header>
+    <img src="images/SNHU.png" alt="SNHU Logo">
+    <h1>Derek Matias</h1>
+    <h2>Southern New Hampshire University</h2>
+    <h3>CS-499 Computer Science Capstone ePortfolio</h3>
+  </header>
 
   <p>
     Welcome to my ePortfolio for the Computer Science program at Southern New Hampshire University.
-    This site documents the development of my Raspberry Pi thermostat project through multiple milestones,
+    This portfolio documents the development of my Raspberry Pi thermostat project through multiple milestones,
     showing how it evolved from a simple embedded system into a fully structured, data-driven application.
     Each version demonstrates growth in software design, algorithmic reasoning, and database management.
+  </p>
+
+  <p>
+    This portfolio was created to communicate my work clearly to both technical and non-technical audiences.
+    Each artifact and narrative includes documentation that explains the design decisions and logic behind
+    each improvement, demonstrating my ability to collaborate through clear and accessible technical communication.
   </p>
 
   <hr>
@@ -90,17 +121,27 @@
   <div class="section">
     <h3>Code Review Video</h3>
     <p>
-      Watch my full capstone code review on YouTube:<br>
-      <a href="https://www.youtube.com/watch?v=S1jXoGfCzwE" target="_blank">
-        View Code Review Video
-      </a>
+      Below is my full capstone code review, which provides a walkthrough of my thermostat project and its evolution.
+      This video demonstrates my ability to explain technical design and logic clearly and effectively.
     </p>
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/S1jXoGfCzwE" 
+      title="CS-499 Code Review" 
+      allowfullscreen>
+    </iframe>
   </div>
 
   <hr>
 
   <div class="section">
     <h3>Artifacts: Raspberry Pi Thermostat Project</h3>
+
+    <p>
+      The thermostat project was developed to automate temperature control using sensor data. Each version refines how
+      the system processes input, updates output, and stores data. Together, these enhancements demonstrate my ability
+      to apply algorithmic and software-engineering principles to create an efficient, reliable, and well-structured solution.
+    </p>
+
     <ul>
       <li>
         <a href="artifacts/Thermostat%20-%20Original.py">Original Thermostat Project (CS 350)</a><br>
@@ -164,6 +205,27 @@
   </div>
 
   <hr>
+
+  <div class="section">
+    <h3>Security Considerations</h3>
+    <p>
+      While the thermostat operates locally, design choices such as input validation, I²C lock control, and exception handling 
+      were added to improve reliability and prevent system failure. These features reflect a security mindset that anticipates 
+      and mitigates risks such as sensor errors, data corruption, and device miscommunication, ensuring system integrity even in 
+      unexpected conditions.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h3>Industry and Technical Relevance</h3>
+    <p>
+      This project integrates multiple technologies commonly used in modern computing, including Python threading, I²C communication, 
+      and SQLite database management. These elements demonstrate my ability to design practical and adaptable computing solutions 
+      using industry-standard tools and practices. The project reflects the type of development found in IoT, automation, and embedded systems work.
+    </p>
+  </div>
 
   <footer>
     <p><em>Last updated: October 2025</em></p>
