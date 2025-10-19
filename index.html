@@ -6,30 +6,71 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      background-color: #0a1f44;
+      color: #f1f1f1;
+      max-width: 950px;
       margin: auto;
-      padding: 30px;
+      padding: 40px;
       line-height: 1.6;
-      color: #1b1b1b;
     }
-    h1, h2, h3 { color: #1e3d7b; }
-    a { color: #0033cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    hr { margin: 25px 0; }
-    .section { margin-bottom: 30px; }
+
+    h1, h2, h3 {
+      color: #8ab4f8;
+      text-align: center;
+    }
+
+    a {
+      color: #add8ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 1px solid #1a3a70;
+      margin: 30px 0;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      color: #c9d3e6;
+      font-size: 0.95em;
+      margin-left: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #a5b8d8;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
 
   <h1>Derek Matias</h1>
-  <h2>Southern New Hampshire University<br>CS-499 Capstone ePortfolio</h2>
+  <h2>Southern New Hampshire University</h2>
+  <h3>CS-499 Computer Science Capstone ePortfolio</h3>
 
   <p>
     Welcome to my ePortfolio for the Computer Science program at Southern New Hampshire University.
-    This portfolio includes my final capstone project, the Raspberry Pi thermostat, along with all
-    milestone enhancements and reflections. Each version demonstrates a different stage of development:
-    software design, algorithms and data structures, and database integration. Together, they show how
-    this project evolved into a complete embedded system that combines both hardware and software.
+    This portfolio documents the development of my Raspberry Pi thermostat project through multiple milestones,
+    showing how it evolved from a simple embedded system into a fully structured, data-driven application.
+    Each version demonstrates growth in software design, algorithmic reasoning, and database management.
   </p>
 
   <hr>
@@ -37,8 +78,9 @@
   <div class="section">
     <h3>Professional Self-Assessment</h3>
     <p>
-      My professional self-assessment introduces this portfolio and summarizes how my coursework shaped my skills
-      and career goals in computer science. It is available in the
+      My professional self-assessment introduces this portfolio and reflects on how completing the Computer Science
+      program shaped my skills and professional goals. It highlights my growth in software design, problem solving,
+      and system integration. You can view the full assessment in the 
       <a href="README.md">README file</a>.
     </p>
   </div>
@@ -49,19 +91,47 @@
     <h3>Code Review Video</h3>
     <p>
       Watch my full capstone code review on YouTube:<br>
-      <a href="https://www.youtube.com/watch?v=S1jXoGfCzwE" target="_blank">View Code Review</a>
+      <a href="https://www.youtube.com/watch?v=S1jXoGfCzwE" target="_blank">
+        View Code Review Video
+      </a>
     </p>
   </div>
 
   <hr>
 
   <div class="section">
-    <h3>Artifacts</h3>
+    <h3>Artifacts: Raspberry Pi Thermostat Project</h3>
     <ul>
-      <li><a href="Thermostat - Original.py">Original Thermostat Project (CS 350)</a></li>
-      <li><a href="ThermostatV2.py">Version 2 – Software Design & Engineering</a></li>
-      <li><a href="ThermostatV3.py">Version 3 – Algorithms & Data Structures</a></li>
-      <li><a href="ThermostatV4.py">Version 4 – Database Integration</a></li>
+      <li>
+        <a href="Thermostat - Original.py">Original Thermostat Project (CS 350)</a><br>
+        <span class="desc">The initial version created for CS 350 demonstrated basic functionality: reading temperature data,
+        controlling LEDs, and displaying output on a 16x2 LCD screen. It provided the foundation for later enhancements
+        and was used to test circuit wiring and device communication.</span>
+      </li>
+
+      <li>
+        <a href="ThermostatV2.py">Version 2 – Software Design & Engineering</a><br>
+        <span class="desc">This version focused on code structure, maintainability, and system reliability. It added organized
+        error handling, grouped configuration variables, and safe resource management to prevent I/O conflicts and runtime failures.
+        These changes aligned with the software design and engineering category, improving the overall quality and readability
+        of the program.</span>
+      </li>
+
+      <li>
+        <a href="ThermostatV3.py">Version 3 – Algorithms & Data Structures</a><br>
+        <span class="desc">This milestone introduced algorithmic enhancements that improved performance and stability.
+        A moving average filter was added to smooth sensor readings, a hysteresis function reduced LED flicker, and
+        a scheduling algorithm allowed automatic setpoint changes based on time of day. These changes demonstrated
+        effective use of algorithmic principles to optimize real-world behavior.</span>
+      </li>
+
+      <li>
+        <a href="ThermostatV4.py">Version 4 – Database Integration</a><br>
+        <span class="desc">The final enhancement implemented SQLite database functionality for persistent data storage.
+        This allowed the thermostat to log temperature readings and user events safely and efficiently. The database
+        structure included tables for readings and events, showing how local data management can improve monitoring
+        and long-term analysis of system performance.</span>
+      </li>
     </ul>
   </div>
 
@@ -70,15 +140,35 @@
   <div class="section">
     <h3>Narratives and Reflections</h3>
     <ul>
-      <li><a href="CS 499 Milestone Two Narrative.docx">Milestone Two – Software Design and Engineering</a></li>
-      <li><a href="CS 499 Milestone Three Narrative.docx">Milestone Three – Algorithms and Data Structures</a></li>
-      <li><a href="CS 499 Milestone Four Narrative.docx">Milestone Four – Database Integration</a></li>
+      <li>
+        <a href="CS 499 Milestone Two Narrative.docx">Milestone Two – Software Design and Engineering Narrative</a><br>
+        <span class="desc">This reflection discusses the process of improving the original code’s structure and reliability.
+        It focuses on secure coding practices, maintainability, and error management, explaining how Version 2 met the
+        learning outcomes related to design and engineering.</span>
+      </li>
+
+      <li>
+        <a href="CS 499 Milestone Three Narrative.docx">Milestone Three – Algorithms and Data Structures Narrative</a><br>
+        <span class="desc">This reflection describes the integration of algorithmic logic, such as moving averages, hysteresis,
+        and scheduling. It explores how these updates improved performance and introduced efficient decision-making
+        processes in a real-time embedded system.</span>
+      </li>
+
+      <li>
+        <a href="CS 499 Milestone Four Narrative.docx">Milestone Four – Database Integration Narrative</a><br>
+        <span class="desc">This reflection explains the addition of the SQLite database and how data persistence expanded
+        the system’s capabilities. It emphasizes the importance of structured data handling, safe commit procedures,
+        and long-term usability in embedded systems.</span>
+      </li>
     </ul>
   </div>
 
   <hr>
 
-  <p><em>Last updated: October 2025</em></p>
+  <footer>
+    <p><em>Last updated: October 2025</em></p>
+    <p>© 2025 Derek Matias | SNHU Computer Science ePortfolio</p>
+  </footer>
 
 </body>
 </html>
