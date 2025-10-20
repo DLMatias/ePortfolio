@@ -98,16 +98,11 @@
     Each version demonstrates growth in software design, algorithmic reasoning, and database management.
   </p>
 
-  <p>
-    This portfolio was created to communicate my work clearly to both technical and non-technical audiences.
-    Each artifact and narrative includes documentation that explains the design decisions and logic behind
-    each improvement, demonstrating my ability to collaborate through clear and accessible technical communication.
-  </p>
-
   <hr>
 
   <div class="section">
     <h3>Professional Self-Assessment</h3>
+
     <p>
       Completing the computer science program has changed the way I think about problem solving. When I first began, I saw computer science as a series of technical steps that led to working code. Over time, I realized it is more about how to think logically, structure information, and build something that not only functions but makes sense. Each course built on the last, shaping a way of thinking that is both analytical and creative. Developing the ePortfolio gave me the opportunity to look back on that process and recognize how each project contributed to my understanding of design, structure, and precision in technology.
     </p>
@@ -150,41 +145,28 @@
     <h3>Artifacts: Raspberry Pi Thermostat Project</h3>
 
     <p>
-      The thermostat project was developed to automate temperature control using sensor data. Each version refines how
-      the system processes input, updates output, and stores data. Together, these enhancements demonstrate my ability
-      to apply algorithmic and software-engineering principles to create an efficient, reliable, and well-structured solution.
+      The thermostat project began as a simple hardware prototype and gradually evolved into a complete embedded computing system. Each version expanded the design both conceptually and technically, adding new logic, structure, and capabilities. This section shows the development from a foundational Python script into a fully engineered application that incorporates algorithms, modular design, and database integration.
     </p>
 
     <ul>
       <li>
         <a href="artifacts/Thermostat%20-%20Original.py">Original Thermostat Project (CS 350)</a><br>
-        <span class="desc">The initial version created for CS 350 demonstrated basic functionality: reading temperature data,
-        controlling LEDs, and displaying output on a 16x2 LCD screen. It provided the foundation for later enhancements
-        and was used to test circuit wiring and device communication.</span>
+        <span class="desc">The first version was created for CS 350: Emerging Systems Architectures and Technologies. It established the basic functionality of the thermostat: reading temperature data from an AHT20 sensor, displaying the output on a 16x2 LCD, and controlling red and blue LEDs to represent heating and cooling. The code directly handled all sensor, LED, and display operations in one file without modular structure. While functional, it lacked separation of concerns and relied heavily on sequential logic, which made future expansion difficult.</span>
       </li>
 
       <li>
         <a href="artifacts/ThermostatV2.py">Version 2 – Software Design & Engineering</a><br>
-        <span class="desc">This version focused on code structure, maintainability, and system reliability. It added organized
-        error handling, grouped configuration variables, and safe resource management to prevent I/O conflicts and runtime failures.
-        These changes aligned with the software design and engineering category, improving the overall quality and readability
-        of the program.</span>
+        <span class="desc">Version 2 focused on improving software organization and maintainability. The code was restructured into distinct classes, including a <code>ManagedDisplay</code> class for LCD control and a <code>TemperatureMachine</code> class that implemented a clear state machine. Threads were introduced to handle asynchronous display updates, and locks were used to prevent resource conflicts on the I²C bus. This milestone aligned with the software design and engineering outcome by turning a procedural prototype into a modular, object-oriented program that follows clear state-driven design principles.</span>
       </li>
 
       <li>
         <a href="artifacts/ThermostatV3.py">Version 3 – Algorithms & Data Structures</a><br>
-        <span class="desc">This milestone introduced algorithmic enhancements that improved performance and stability.
-        A moving average filter was added to smooth sensor readings, a hysteresis function reduced LED flicker, and
-        a scheduling algorithm allowed automatic setpoint changes based on time of day. These changes demonstrated
-        effective use of algorithmic principles to optimize real-world behavior.</span>
+        <span class="desc">The third version added algorithmic reasoning and efficiency improvements. Sensor readings were processed through a moving average algorithm to smooth noise and improve stability. A hysteresis system was added to reduce LED flicker by creating a temperature buffer between on and off states. The program logic was updated to handle time-based events and manage scheduled temperature adjustments. These changes introduced computational efficiency, better real-world responsiveness, and more intelligent control logic, demonstrating an understanding of how algorithmic design improves performance and user experience.</span>
       </li>
 
       <li>
         <a href="artifacts/ThermostatV4.py">Version 4 – Database Integration</a><br>
-        <span class="desc">The final enhancement implemented SQLite database functionality for persistent data storage.
-        This allowed the thermostat to log temperature readings and user events safely and efficiently. The database
-        structure included tables for readings and events, showing how local data management can improve monitoring
-        and long-term analysis of system performance.</span>
+        <span class="desc">The final version integrated a local SQLite database to enable data persistence. Each temperature reading and thermostat event was logged automatically with timestamps, allowing for long-term analysis of temperature trends and user adjustments. The database logic was implemented in a separate <code>ThermostatDatabase</code> class that manages connections, writes, and safe commits. This addition showed how embedded systems can leverage databases for efficient data management, bridging hardware control with long-term digital storage and analysis.</span>
       </li>
     </ul>
   </div>
@@ -193,26 +175,25 @@
 
   <div class="section">
     <h3>Narratives and Reflections</h3>
+
+    <p>
+      Each narrative expands on the learning process behind the code revisions and explains how the enhancements align with core computer science principles. Together, they document the full development cycle—from early design thinking to algorithmic refinement and data management.
+    </p>
+
     <ul>
       <li>
         <a href="Narratives/CS%20499%20Milestone%20Two%20Narrative.docx">Milestone Two – Software Design and Engineering Narrative</a><br>
-        <span class="desc">This reflection discusses the process of improving the original code’s structure and reliability.
-        It focuses on secure coding practices, maintainability, and error management, explaining how Version 2 met the
-        learning outcomes related to design and engineering.</span>
+        <span class="desc">This narrative explains how I refactored the original CS 350 thermostat code to follow modular design practices. It discusses the process of encapsulating functionality into reusable classes, applying threading to manage concurrent processes, and improving the code’s readability and scalability. It also reflects on how these changes supported secure and stable system operation by reducing direct hardware conflicts and enforcing clearer logic boundaries.</span>
       </li>
 
       <li>
         <a href="Narratives/CS%20499%20Milestone%20Three%20Narrative.docx">Milestone Three – Algorithms and Data Structures Narrative</a><br>
-        <span class="desc">This reflection describes the integration of algorithmic logic, such as moving averages, hysteresis,
-        and scheduling. It explores how these updates improved performance and introduced efficient decision-making
-        processes in a real-time embedded system.</span>
+        <span class="desc">This narrative focuses on how algorithmic thinking transformed the thermostat’s behavior. It explains the reasoning behind adding moving averages to stabilize readings, hysteresis logic to prevent frequent LED toggling, and scheduling algorithms for adaptive control. It also details how these updates improved performance and reliability, linking them to theoretical foundations in data processing and algorithmic optimization learned earlier in the program.</span>
       </li>
 
       <li>
         <a href="Narratives/CS%20499%20Milestone%20Four%20Narrative.docx">Milestone Four – Database Integration Narrative</a><br>
-        <span class="desc">This reflection explains the addition of the SQLite database and how data persistence expanded
-        the system’s capabilities. It emphasizes the importance of structured data handling, safe commit procedures,
-        and long-term usability in embedded systems.</span>
+        <span class="desc">This final reflection explores the integration of persistent data storage using SQLite. It discusses designing the schema for temperature and event logging, implementing efficient database writes, and handling potential concurrency issues. The narrative connects these technical updates to broader database design principles such as normalization, indexing, and transaction safety, emphasizing how structured data management completes the system’s full lifecycle of sensing, processing, and storage.</span>
       </li>
     </ul>
   </div>
@@ -247,3 +228,4 @@
 
 </body>
 </html>
+
